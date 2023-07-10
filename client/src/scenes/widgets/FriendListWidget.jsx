@@ -35,7 +35,7 @@ const FriendListWidget = ({ userId }) => {
       const data = await response.json();
       dispatch(setFriends({ friends: data }));
     };
-    // getFriends();
+    getFriends();
   }, []); 
   return (
     <WidgetWrapper>
